@@ -76,7 +76,7 @@ df$price <- gsub("\\$|,", "", df$price)
 df <- select(df, c("brand", "type", "year", "price", "mpg", "link" = "car_name"))
 
 #Save
-write.csv(df, "KBB_Data2.csv", row.names = FALSE)
+write.csv(df, "KBB_Data.csv", row.names = FALSE)
 
 # Close Selenium properly when compelte
 remDr$close()
